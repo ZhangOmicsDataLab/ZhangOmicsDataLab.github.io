@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333; /* Default text color is dark for readability */
+}
+
+header {
+    background: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.pad {
+    padding: 100px;
+}
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?bioinformatics') no-repeat center center/cover;
+    color: #0000009c; /* Ensure hero text is white */
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: #00b894;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #019875;
+}
+
+.intro, .team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.team-member, .publications {
+    width: 400px;
+    height: 250px;
+    background: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px); /* Calculate width for 3 columns with margin */
+    text-align: center;
+    color: #333; /* Ensure text color inside intro items is dark */
+    box-sizing: border-box; /* Include padding and margin in element's total width and height */
+    max-width: 300px; /* Set a maximum width for the items */
+}
+.intro-item {
+    background: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    color: #333; /* Ensure text color inside intro items is dark */
+}
+.team-member img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.team-member h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

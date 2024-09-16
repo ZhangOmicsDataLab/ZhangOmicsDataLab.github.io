@@ -110,3 +110,71 @@ footer {
     width: 100%;
     bottom: 0;
 }
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Styling for the Recent Funded Projects section */
+.projects {
+    background-color: #f9f9f9; /* Light background */
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.projects h2 {
+    color: #333; /* Darker color for the title */
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.projects ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.projects li {
+    background-color: #fff; /* White background for each project */
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-left: 5px solid #00b894; /* Add a nice left border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.projects li:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+}
+
+.projects li strong {
+    color: #00b894; /* Highlight project names in blue */
+    display: block;
+    font-size: 18px;
+}
+
+.projects li {
+    color: #333; /* Ensure text is black */
+}
+
+.projects li p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+}

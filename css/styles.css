@@ -115,3 +115,30 @@ footer {
     width: 100%;
     bottom: 0;
 }
+.project-detail {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.project-detail img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.project-detail h1 {
+    color: #333;
+}
+.project-detail p {
+    color: #666;
+    text-align: left;
+    font-size: 20px;
+}
+.project-detail i {
+    color: #666;
+    font-size: 15px;
+    display: block; /* Ensures that the <i> starts from a new line */
+    text-align: left; /* Aligns the text to the left */
+    margin: 0; /* Removes extra margin */
+    padding: 0; /* Removes extra padding */
+}

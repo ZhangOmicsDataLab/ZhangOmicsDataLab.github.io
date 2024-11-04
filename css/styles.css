@@ -99,6 +99,7 @@ nav ul li a {
     margin-bottom: 10px;
     width: 100px;
     height: 100px;
+    object-fit: cover; /* Ensures the image covers the area and maintains the aspect ratio */
 }
 
 .team-member h2 {

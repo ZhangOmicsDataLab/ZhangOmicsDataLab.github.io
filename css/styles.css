@@ -75,6 +75,14 @@ nav ul li.padded {
 .hero .btn:hover {
     background: #019875;
 }
+.hero img {
+    width: 100%;
+    max-width: 1000px; /* Set a maximum width for larger screens */
+    height: auto;
+    border: 3px solid #00b89358; /* Add a border */
+    border-radius: 10px; /* Optional: Rounded corners */
+    margin-top: 20px;
+}
 
 .intro, .team{
     display: flex;

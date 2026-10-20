@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site';
+---
+<Base title="Contact">
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p class="lead">We'd love to hear from you! Get in touch with us through any of the methods below.</p>
+  </section>
+  <section class="contact">
+    <h2>Email</h2>
+    <p>You can email us at <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+    <h2>Phone</h2>
+    <p>Call us at +44 344 928 5428.</p>
+    <h2>Address</h2>
+    <p>Visit us at:<br />James Hutton Institute<br />Invergowrie, Dundee DD2 5DA</p>
+    <h2>Social Media</h2>
+    <p>Follow us on:</p>
+    <ul>
+      <li><a href="https://x.com/runxuan" target="_blank" rel="noopener">X/Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/runxuan-zhang/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </section>
+</Base>

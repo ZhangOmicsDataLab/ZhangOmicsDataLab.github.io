@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import banner from '../assets/lab/team.jpg';
+
+const members = (await getCollection('team')).sort((a, b) => a.data.order - b.data.order);
+---
+<Base title="Team">
+  <section class="hero">
+    <h1>Meet Our Team</h1>
+    <p class="lead">The experts behind our innovative research and tools.</p>
+    <Image class="banner" src={banner} alt="The team" widths={[600, 1000, 1500]} sizes="(max-width: 1000px) 100vw, 1000px" />
+  </section>
+  <section class="card-grid">
+    {members.map((m) => (
+      <a class="card" href={`/team/${m.id}.html`}>
+        <Image class="avatar" src={m.data.photo} alt={m.data.name} width={200} height={200} />
+        <h2>{m.data.name}</h2>
+        <p class="role">{m.data.role}</p>
+      </a>
+    ))}
+  </section>
+</Base>

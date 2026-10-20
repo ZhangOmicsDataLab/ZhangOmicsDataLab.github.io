@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Card from '../components/Card.astro';
+import logo from '../assets/lab/logo.svg';
+---
+<Base>
+  <section class="hero">
+    <Image class="hero-logo" src={logo} alt="OmicsDataLab logo" width={600} />
+    <h1>Welcome to omicsDatalab</h1>
+    <p class="prose">OmicsDataLab is a research team located at The James Hutton Institute (Invergowrie) that focuses on the development of novel and cutting-edge computational methods for high-throughput omics data. Our research includes:</p>
+    <ol>
+      <li>Accurate and fast transcript quantification for alternative splicing analysis using RNA sequencing data.</li>
+      <li>Improvement of protein and splice junction coverage in shotgun proteomics.</li>
+      <li>Gene regulatory network inference using co-expression networks and large foundation models.</li>
+    </ol>
+    <a class="btn" href="/contact.html">Get in Touch</a>
+  </section>
+
+  <section class="card-grid">
+    <Card title="Projects" href="/projects.html" cta="Learn More">Explore our latest research and development projects in RNA-seq.</Card>
+    <Card title="Our Team" href="/team.html" cta="Meet the Team">Meet the experts behind our innovative research and tools.</Card>
+    <Card title="Tools and Publications" href="/tools.html" cta="Explore Tools">Discover the powerful tools we develop to facilitate RNA-seq analysis and our latest publications.</Card>
+  </section>
+
+  <section class="hero">
+    <p class="prose">
+      The method we developed to construct reference transcript datasets to enable extreme fast and accurate transcript/gene quantification using RNA-seq data in Arabidopsis is now translated into barley and potato and other 10 species, which improves the quality of the analysis results, reduces the analysis time. It provides great benefits for all the scientists working on molecular biology across the globe. Our "3D RNA-seq" attracted over 16K users globally since released in June 2019. It also won Best Innovation in Innovator of the Year Award at UoD School of Life Sciences Review 2018 and cited by over 70 papers published in high impact journals, such as Nature, Nature Comms, The Plant Cell. A spin-out SHARP Genomic Analytics is to be launched in March 2024 to commercialize our analytical platform, supported by InnovateUK, BBSRC, Scottish Enterprise and private investors.
+    </p>
+  </section>
+</Base>

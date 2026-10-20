@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/lab/logo.svg';
+import { site } from '../data/site';
+
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const section = (href: string) => {
+  const base = href.replace(/\.html$/, '');
+  return base === '/' ? path === '/' || path === '/index.html' : path === base || path.startsWith(`${base}/`) || path === href;
+};
+---
+<header class="site-header">
+  <nav aria-label="Main">
+    <a class="logo" href="/"><Image src={logo} alt={`${site.lab} logo`} height={32} /></a>
+    <ul>
+      {site.nav.map((item) => (
+        <li><a href={item.href} aria-current={section(item.href) ? 'page' : undefined}>{item.label}</a></li>
+      ))}
+    </ul>
+  </nav>
+</header>

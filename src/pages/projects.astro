@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import funded from '../data/funded-projects.json';
+---
+<Base title="Projects">
+  <section class="funded">
+    <h2>Recent Funded Projects</h2>
+    <ul>
+      {funded.map((p) => (
+        <li><strong>{p.title}</strong> {p.funder}</li>
+      ))}
+    </ul>
+  </section>
+</Base>
